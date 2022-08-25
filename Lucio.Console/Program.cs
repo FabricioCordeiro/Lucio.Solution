@@ -33,6 +33,10 @@ foreach (var item in calc.Dados)
 }
 Console.WriteLine();
 
+Console.Write($" Intervalo: {calc.Intervalo}");
+Console.WriteLine();
+Console.WriteLine();
+
 Console.Write(" ROL:");
 foreach (var item in calc.Rol)
 {
@@ -40,13 +44,33 @@ foreach (var item in calc.Rol)
 }
 Console.WriteLine();
 
+Console.Write($" Quantidade total: {calc.Dados.Count}");
+Console.WriteLine();
+
 Console.Write($" Amplitude total: {calc.AmplitudeTotal}");
 Console.WriteLine();
 
-Console.Write($" Amplitude do intervalo: {calc.AmplitudeDoIntervalo}");
+Console.WriteLine($" Amplitude do intervalo: {calc.AmplitudeDoIntervalo}");
 Console.WriteLine();
 
-Console.Write("-------------------------------------------------------");
+Console.WriteLine("-------------------------------------------------------");
 Console.WriteLine();
+
+Console.WriteLine(" Dados         fi   Fi   fr   Fr");
+Console.WriteLine();
+
+for (int i = 0; i < calc.Table.Count; i++)
+{
+    if (i != calc.Table.Count - 1)
+    {
+        Console.WriteLine($" {calc.Table[i].LenghtIntervalo.valor1} |-  {calc.Table[i].LenghtIntervalo.valor2}    {calc.Table[i].Fi1}   {calc.Table[i].Fi2}");
+    }
+    else
+    {
+        Console.WriteLine($" {calc.Table[i].LenghtIntervalo.valor1} |-| {calc.Table[i].LenghtIntervalo.valor2}    {calc.Table[i].Fi1}   {calc.Table[i].Fi2}");
+    }
+}
+Console.WriteLine("-------------------------------------------------------");
+Console.WriteLine($" Total:         {calc.Fi1Total}   -");
 
 Console.ReadKey();
