@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucio.Console", "Lucio.Console\Lucio.Console.csproj", "{221D1D65-D3C3-4265-85F4-D8F9BCBFE41C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucio.Logic", "Lucio.Logic\Lucio.Logic.csproj", "{EE8E978D-4279-4377-B543-A6AB971CFD17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{221D1D65-D3C3-4265-85F4-D8F9BCBFE41C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221D1D65-D3C3-4265-85F4-D8F9BCBFE41C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221D1D65-D3C3-4265-85F4-D8F9BCBFE41C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221D1D65-D3C3-4265-85F4-D8F9BCBFE41C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8E978D-4279-4377-B543-A6AB971CFD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8E978D-4279-4377-B543-A6AB971CFD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8E978D-4279-4377-B543-A6AB971CFD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8E978D-4279-4377-B543-A6AB971CFD17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDFEDD41-EEF5-434E-BFCD-A8A9DEA6DAFF}
+	EndGlobalSection
+EndGlobal
