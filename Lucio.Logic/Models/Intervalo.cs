@@ -9,9 +9,9 @@ namespace Lucio.Logic.Models
     public class Intervalo
     {
         public (double valor1, double valor2) LenghtIntervalo { get; set; }
-        public int Fi1 { get; set; } //fi = Frequência absoluta simples
-        public int Fi2 { get; set; } //Fi = Frequência absoluta acumulada
-        public int Fr1 { get; set; } //fr
-        public int Fr2 { get; set; } //Fr
+        public double Fi1 { get; set; } //fi = Frequência absoluta simples
+        public double Fi2 { get; set; } //Fi = Frequência absoluta acumulada
+        public double Fr1 { get; set; } //fr
+        public double Fr2 { get; set; } //Fr
     }
 }

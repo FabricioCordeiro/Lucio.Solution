@@ -16,7 +16,7 @@ namespace Lucio.Logic.Actions
         public double AmplitudeDoIntervalo { get; set; }
 
         public List<Intervalo> Table { get; set; }
-        public int Fi1Total { get; set; } //fi
+        public double Fi1Total { get; set; } //fi
 
         public Calc(List<double> dados, int intervalo)
         {
@@ -33,13 +33,14 @@ namespace Lucio.Logic.Actions
         {
             var table = new List<Intervalo>();
             double init = Dados.Min();
-            int fi2 = 0;
+            double fi2 = 0;
+            double fr2 = 0;
 
             for (double i = init; i < Dados.Max(); i = init)
             {
                 double valor1 = init;
                 double valor2 = init + AmplitudeDoIntervalo;
-                int fi = 0;
+                double fi = 0;
 
                 if (valor2 != Dados.Max())
                 {
@@ -54,13 +55,20 @@ namespace Lucio.Logic.Actions
                 {
                     LenghtIntervalo = (valor1, valor2),
                     Fi1 = fi,
-                    Fi2 = fi + fi2
+                    Fi2 = fi + fi2,
                 };
 
                 table.Add(intervalo);
                 Fi1Total += fi;
                 fi2 += fi;
                 init = valor2;
+            }
+
+            foreach (var item in table)
+            {
+                item.Fr1 = item.Fi1 / Fi1Total * 100;
+                fr2 += item.Fr1;
+                item.Fr2 = fr2;
             }
 
             return table;

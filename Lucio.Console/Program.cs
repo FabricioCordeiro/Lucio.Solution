@@ -5,7 +5,7 @@ List<double> dados = new()
     174,
     170,
     168,
-    180,
+    181,
     163,
     165,
     167,
@@ -63,11 +63,11 @@ for (int i = 0; i < calc.Table.Count; i++)
 {
     if (i != calc.Table.Count - 1)
     {
-        Console.WriteLine($" {calc.Table[i].LenghtIntervalo.valor1} |-  {calc.Table[i].LenghtIntervalo.valor2}    {calc.Table[i].Fi1}   {calc.Table[i].Fi2}");
+        Console.WriteLine($" {calc.Table[i].LenghtIntervalo.valor1} |-  {calc.Table[i].LenghtIntervalo.valor2}    {calc.Table[i].Fi1}   {calc.Table[i].Fi2}     {calc.Table[i].Fr1}%    {calc.Table[i].Fr2}%");
     }
     else
     {
-        Console.WriteLine($" {calc.Table[i].LenghtIntervalo.valor1} |-| {calc.Table[i].LenghtIntervalo.valor2}    {calc.Table[i].Fi1}   {calc.Table[i].Fi2}");
+        Console.WriteLine($" {calc.Table[i].LenghtIntervalo.valor1} |-| {calc.Table[i].LenghtIntervalo.valor2}    {calc.Table[i].Fi1}   {calc.Table[i].Fi2}    {calc.Table[i].Fr1}%    {calc.Table[i].Fr2}%");
     }
 }
 Console.WriteLine("-------------------------------------------------------");
